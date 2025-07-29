@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Registration</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Event Registration</h2>
+    <form action="submit_form.php" method="POST">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required placeholder="Enter your full name">
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required placeholder="Enter your email address">
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+
+      <label for="event">Select Event:</label>
+      <select id="event" name="event">
+        <option value="conference">Tech Conference</option>
+        <option value="workshop">Workshop</option>
+        <option value="seminar">Seminar</option>
+      </select>
+
+      <label for="date">Preferred Date:</label>
+      <input type="date" id="date" name="date">
+
+      <button type="submit" class="submit-btn">Register</button>
+    </form>
+  </div>
+</body>
+</html>
